@@ -1,0 +1,30 @@
+<%- include('parts/top') %>
+<br><br><br><br><br><br>
+<div class="container">
+    <form method="POST" action='/login'>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="form2Example1" name="email" class="form-control" placeholder="email adress" />
+          
+        </div>
+      
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="form2Example2" name="password" class="form-control" placeholder="password"/>
+          
+        </div>
+        <%if (message) {%>
+        <div class="alert alert-danger">
+          <%= message %>
+        </div>
+        <%}%>
+       
+      
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block ">Login</button>
+      
+       
+       
+      </form>
+</div>
+<%- include('parts/buttom') %>

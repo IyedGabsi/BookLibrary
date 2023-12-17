@@ -1,0 +1,18 @@
+<%- include('parts/top') %>
+<br><br><br><br><br>
+<div class="container ">
+    <div class="row">
+      <div class="col">
+        <img width="500" height="500" src="/uploads/<%=book.image%>" alt="">
+      </div>
+      <div class="col">
+        <h2><%= book.title %></h2>
+        <p><%= book.author %></p>
+        <h6>$<%= book.price %></h6>
+        <p><%= book.discription %></p>
+      </div>
+      
+    </div>
+  </div>
+  <br><br><br><br><br><br><br>
+<%- include('parts/buttom') %>
